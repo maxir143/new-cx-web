@@ -1,0 +1,347 @@
+---
+import ButtonCX from "../components/ButtonCX.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Funcionalidades">
+  <div>
+    <section class="frecuentes">
+      <h1 class="text-gradient-cx-radial-faq">Preguntas Frecuentes</h1>
+
+      <h2 class="text-gradient-cx-radial-sub">
+        ¿Qué es CX Suite y cómo puede ayudar a mi empresa?
+      </h2>
+      <span
+        >CX Suite es una plataforma que da solución para la gestión de Social
+        Command Center que permite atender canales de contacto inmediato.</span
+      >
+
+      <h2 class="text-gradient-cx-radial-sub">
+        ¿Qué canales de comunicación puedo integrar en CX Suite?
+      </h2>
+      <span
+        >WhatsApp, Redes Sociales, Llamadas, SMS, Google Ads, Formularios web,
+        IVR – Sistemas de Auto Respuesta, e-mail, chat, video.</span
+      >
+
+      <h2 class="text-gradient-cx-radial-sub">
+        ¿Cómo funciona las respuestas automáticas en CX Suite?
+      </h2>
+      <span
+        >Trabajamos con un catálogo de preguntas rápidas que el agente puede
+        seleccionar para responder más rápido.</span
+      >
+
+      <h2 class="text-gradient-cx-radial-sub">
+        ¿Puedo personalizar las respuestas y mensajes que se envían a mis
+        clientes?
+      </h2>
+      <span
+        >Sí, se pueden personalizar las respuestas a tus clientes para mejorar
+        la experiencia de tus clientes.</span
+      >
+
+      <h2 class="text-gradient-cx-radial-sub">
+        ¿Cómo puedo integrar CX Suite con otras herramientas o plataformas que
+        utilizo en mi empresa?
+      </h2>
+      <span
+        >Hacemos un análisis sobre la plataforma en la que se desee comunicarse
+        y la habilitamos dentro de la plataforma.</span
+      >
+
+      <h2 class="text-gradient-cx-radial-sub">
+        ¿Hay algún límite en cuanto al número de clientes o mensajes que puedo
+        manejar con CX Suite?
+      </h2>
+      <span
+        >No, no hay, al poder atender todos tus canales de contacto en un solo
+        lugar no tienes un límite de mensajes e interacciones, puedes gestionar
+        y dar respuestas oportunas a todos tus clientes y contactos.</span
+      >
+
+      <h2 class="text-gradient-cx-radial-sub">
+        ¿CX Suite ofrece herramientas de análisis y reporte para medir la
+        eficacia de mi estrategia de atención al cliente?
+      </h2>
+      <span
+        >Sí, puedes medir la calidad y el tiempo de trabajo de tus agentes en
+        tiempo real y crear reportes de trabajo para medir la eficacia en sus
+        tiempos de atención, de esta forma mejorarás la atención al cliente.</span
+      >
+
+      <h2 class="text-gradient-cx-radial-sub">
+        ¿Es fácil de usar CX Suite? ¿Se requiere algún tipo de capacitación o
+        conocimiento técnico especializado?
+      </h2>
+      <span
+        >Es una plataforma muy amigable y fácil de utilizar. Nuestro equipo se
+        encuentra altamente capacitado para brindarte apoyo 24/7. No es
+        necesario contar con condiciones especiales para implementarlo con tu
+        equipo, nosotros te apoyamos en capacitarlos para sacarle el mejor
+        provecho a la plataforma.</span
+      >
+    </section>
+
+    <div class="card-container">
+      <div class="image">
+        <img src="images/content/char.png" alt="" />
+      </div>
+      <div class="contact-and-button-container">
+        <div class="contact-info">
+          <h2 class="info">¿Necesitas más información?</h2>
+          <p class="contacta">
+            Contáctanos vía Whatssapp o por teléfono al 00-00-00-00.
+          </p>
+          <p class="email">email@likenuuk.com</p>
+          <p class="solicitar">
+            También puedes solicitar una demostración y pronto nos pondremos en
+            contacto contigo.
+          </p>
+        </div>
+        <ButtonCX title="Agenda una demo" href="formulario.html" />
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .frecuentes h2,
+  span {
+    font-weight: normal;
+  }
+  .frecuentes {
+    font-family: "Hurme Geometric Sans 3";
+    margin: 150px;
+  }
+
+  .text-gradient-cx-radial-faq {
+    background: radial-gradient(
+      50.54% 9668.35% at 25% 75.32%,
+      #f9751c 0%,
+      #7f41fa 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-cx-radial-sub {
+    background: linear-gradient(90deg, #f9751c 0%, #7f41fa 146.13%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  span {
+    font-size: 27px;
+  }
+
+  .info {
+    background: radial-gradient(
+      50.54% 9668.35% at 25% 75.32%,
+      #f9751c 0%,
+      #7f41fa 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    line-height: 1.2;
+    word-wrap: break-word;
+    font-size: 50px;
+  }
+
+  .email,
+  .solicitar,
+  .contacta {
+    background: linear-gradient(90deg, #f9751c 0%, #7f41fa 146.13%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    line-height: 1.2;
+    word-wrap: break-word;
+  }
+
+  .card-container {
+    width: 65%;
+    height: auto;
+    margin: 50px auto;
+    background-color: #fff;
+    box-shadow: 0px 10px 24px rgba(38, 42, 49, 0.61);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .card-container .image img {
+    width: 100%;
+  }
+
+  .contact-and-button-container {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-and-button-container h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .contact-and-button-container p {
+    font-size: 30px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+  }
+
+  .cx-button {
+    display: flex;
+    width: auto;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 25px;
+    background-color: #636363;
+    color: #fff;
+    font-size: 22px;
+    font-weight: normal;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    margin-top: 50px;
+  }
+
+  .cx-button > :first-child {
+    background: linear-gradient(
+      90deg,
+      rgba(249, 117, 28, 1) 0%,
+      rgba(127, 65, 250, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 5%;
+  }
+
+  .cx-button:hover {
+    background-color: #fff;
+    color: #4c4c4c;
+  }
+  @media screen and (max-width: 1320px) {
+    .frecuentes {
+      margin: 150px 30px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    span {
+      font-size: 18px;
+    }
+    .card-container {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .image {
+      width: auto;
+    }
+
+    .contact-info {
+      width: auto;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .frecuentes {
+      margin: 150px 30px;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+
+    span {
+      font-size: 18px;
+    }
+    .card-container {
+      flex-direction: column;
+      width: 90%;
+      height: auto;
+    }
+
+    .image {
+      width: auto;
+    }
+
+    .contact-info {
+      width: auto;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .frecuentes {
+      margin: 150px 30px;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    span {
+      font-size: 16px;
+    }
+    .card-container {
+      flex-direction: column;
+      width: 95%;
+      height: auto;
+    }
+
+    .image {
+      width: auto;
+    }
+
+    .contact-info {
+      width: auto;
+      font-size: 14px;
+    }
+  }
+  @media screen and (max-width: 220px) {
+    .info {
+      font-size: 38px !important;
+    }
+    .card-container {
+      width: 80% !important;
+    }
+  }
+</style>

@@ -1,0 +1,60 @@
+<section class="brands">
+  <h4>
+    <b class="orange">Únete a las empresas que utilizan</b>
+    <b class="text-gradient-cx-left">CX Suite</b>
+  </h4>
+  Empresas de todos los sectores confían en nosotros.
+</section>
+<div class="brands-grid">
+  <img loading="lazy" src="images/logos/Alimentario.svg" alt="" />
+  <img loading="lazy" src="images/logos/Construcción.svg" alt="" />
+  <img loading="lazy" src="images/logos/ECommerce.svg" alt="" />
+  <img loading="lazy" src="images/logos/Educativo.svg" alt="" />
+  <img loading="lazy" src="images/logos/Financiero.svg" alt="" />
+  <img loading="lazy" src="images/logos/Tecnologico.svg" alt="" />
+</div>
+
+<style>
+  h4 {
+    font-size: 32px;
+    text-align: center;
+    display: inline;
+  }
+
+  img {
+    margin: auto;
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  .brands {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #c6c6c6;
+    padding-bottom: 60px;
+  }
+
+  .brands-grid {
+    margin: 10px 0px;
+    gap: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 101%;
+    height: auto;
+  }
+
+  @media only screen and (max-width: 800px) {
+    .brands-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    .brands-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,57 @@
+---
+const { title = "", href = "" } = Astro.props;
+---
+
+<a class="cx-button" href={href}>
+  <p>{title}</p>
+</a>
+
+<style>
+  /* cx button  */
+  .cx-button {
+    margin: auto;
+    font-size: 22px;
+    padding: 0px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 5px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+      linear-gradient(
+          to right,
+          rgba(249, 117, 28, 1),
+          rgba(127, 65, 250, 1) 100%
+        )
+        border-box;
+  }
+
+  .cx-button > :first-child {
+    background: linear-gradient(
+      90deg,
+      rgba(249, 117, 28, 1) 0%,
+      rgba(127, 65, 250, 1) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .cx-button:hover {
+    border: 5px solid white;
+    background: linear-gradient(
+      90deg,
+      rgba(249, 117, 28, 1) 0%,
+      rgba(127, 65, 250, 1) 100%
+    );
+  }
+
+  .cx-button:hover > :first-child {
+    background-clip: unset;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: white;
+    background: transparent;
+  }
+
+  .cx-button:active > :first-child {
+    -webkit-text-fill-color: rgb(239, 239, 239);
+  }
+</style>

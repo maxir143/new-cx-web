@@ -1,0 +1,69 @@
+---
+const { imageSrc = "", imageLeft = false } = Astro.props;
+---
+
+<section class="card">
+  <div
+    class="card-container"
+    style={imageLeft && { "flex-wrap": "wrap-reverse" }}
+  >
+    <div class="card-col-1">
+      {
+        !imageLeft ? (
+          <img
+            loading="lazy"
+            class="card-image"
+            src={imageSrc}
+            alt="cx suite services"
+          />
+        ) : (
+          <slot />
+        )
+      }
+    </div>
+    <div class="card-col-2">
+      {
+        imageLeft ? (
+          <img
+            loading="lazy"
+            class="card-image"
+            src={imageSrc}
+            alt="cx suite services"
+          />
+        ) : (
+          <slot />
+        )
+      }
+    </div>
+  </div>
+</section>
+
+<style>
+  .card {
+    padding: 15px 10px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-image {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+  }
+
+  .card-col-1,
+  .card-col-2 {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    max-width: min(100vw, 500px);
+    margin: auto;
+    position: relative;
+    padding: 10px;
+  }
+</style>

@@ -1,0 +1,122 @@
+---
+import ButtonCX from "./ButtonCX.astro";
+import Card from "./Card.astro";
+---
+
+<section class="functionality">
+  <section class="functionality">
+    <h1 class="text-gradient-cx-radial">Funcionalidades</h1>
+    <h3>
+      <b class="orange"
+        >CX Suite ofrece las mejores funcionalidades del sector</b
+      > que permitirán a tu equipo desempeñar de forma eficiente su trabajo.
+    </h3>
+  </section>
+
+  <Card imageSrc="images/content/funcionalidades/Plataforma.svg">
+    <h2 class="text-gradient-cx-radial">Plataforma</h2>
+    <ul>
+      <li>Enrutamiento por keywords</li>
+      <li>Mensajes de espera, mensajes de auto respuesta</li>
+      <li>Agente virtual BOT</li>
+      <li>Transferencias de conversaciones a otras unidades de trabajo</li>
+      <li>Compartir imágenes o PDF con clientes en Chat</li>
+      <li>Historial de gestiones previas de cliente en otros canales</li>
+      <li>Realizar llamadas de salida como complemento de canales digitales</li>
+      <li>Notificaciones en tiempo real de respuestas del cliente</li>
+      <li>Identificación de registros de campañas masivas (SMS y WhatsApp)</li>
+      <li>Asignación de permisos por perfil de usuario</li>
+      <li>Manejo de habilidades</li>
+      <li>Creación de campañas</li>
+      <li>Configuración de Horarios de atención</li>
+    </ul>
+    <ButtonCX title="Agenda una demo" href="formulario.html" />
+  </Card>
+
+  <Card imageSrc="images/content/funcionalidades/Supervisor.svg" imageLeft>
+    <h2 class="text-gradient-cx-radial">Supervisor</h2>
+    <ul>
+      <li>Reportes y dashboards</li>
+      <li>Auditoría (grabación y monitoreo en línea)</li>
+      <li>Control de actividades y tiempos</li>
+      <li>
+        Monitoreo en tiempo real de las conversaciones activas de los agentes
+        (supervisor)
+      </li>
+      <li>Monitoreo de colas de espera en las distintas unidades</li>
+      <li>Asignación de agentes y grupos de trabajo</li>
+      <li>Asignación por prioridades</li>
+    </ul>
+  </Card>
+
+  <Card imageSrc="images/content/Agente.svg">
+    <h2 class="text-gradient-cx-radial">Agente</h2>
+    <ul>
+      <li>Gestión de casos</li>
+      <li>Scripts y Preguntas Frecuentes</li>
+      <li>Corrector de ortografía</li>
+      <li>Tipificar contactos</li>
+      <li>Consulta de histórico de conversaciones</li>
+      <li>Identificación de lead o atención</li>
+      <li>Visualización del origen de la interacción</li>
+      <li>Transferencia de grupos de trabajo</li>
+      <li>Plantillas de respuesta rápida</li>
+      <li>Manejo de carrera de prospectos para envío de HSM (WhatsApp)</li>
+      <li>Clasificación de interacciones</li>
+    </ul>
+    <ButtonCX title="Agenda una demo" href="formulario.html" />
+  </Card>
+
+  <Card imageSrc="images/content/funcionalidades/Reportes.svg" imageLeft>
+    <h2 class="text-gradient-cx-radial">Reportes y Dashboard</h2>
+    <ul>
+      <li>Interacciones recibidas</li>
+      <li>Clasificación de contacto</li>
+      <li>Nuevos contactos</li>
+      <li>Productividad</li>
+      <li>Conversaciones fuera de horarios</li>
+      <li>Mensajes outboud</li>
+      <li>Niveles de servicios</li>
+      <li>Balance de WhatsApp</li>
+      <li>Balance de Créditos SMS y WhatsApp</li>
+      <li>Dashboard de colas</li>
+      <li>Dashboard de colas</li>
+      <li>Conversaciones en fila de espera</li>
+      <li>Actividad de agentes</li>
+      <li>Niveles de atención</li>
+      <li>Conversaciones recibidas</li>
+    </ul>
+  </Card>
+</section>
+
+<style>
+  .functionality {
+    margin: auto;
+    padding: 20px;
+    max-width: 1200px;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: bolder;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: bolder;
+  }
+
+  @media only screen and (max-width: 800px) {
+    h1 {
+      font-size: 38px;
+    }
+  }
+
+  ul {
+    list-style: disc;
+    margin: 35px 0px;
+    padding: 0;
+    font-size: 20px;
+    text-align: justify;
+  }
+</style>

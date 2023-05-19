@@ -1,0 +1,143 @@
+---
+import ButtonCX from "./ButtonCX.astro";
+import Card from "./Card.astro";
+import BrandsContainer from "./BrandsContainer.astro";
+---
+
+<div class="hero-card-container">
+  <section class="hero hero-background">
+    <div class="hero-container">
+      <div class="hero-col-1">
+        <h1>
+          <span class="text-gradient-cx-right">CX Suite</span> te ayuda a gestionar
+          todas las conversaciones con tus clientes.
+        </h1>
+        <p class="subtitle">
+          Administra todos tus canales de atención a clientes de forma eficiente
+          y sencilla, nos adaptamos a la medida de tu negocio.
+        </p>
+        <ButtonCX title="Agenda una demo" href="formulario.html" />
+        <img src="images/hero/Meta_Business_Partners.svg" alt="" />
+      </div>
+      <div class="hero-col-2">
+        <img
+          loading="lazy"
+          class="hero-image"
+          src="images/hero/mockup-cxsuite.png"
+          alt="cx suite services"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- CX Suite es omnicanal -->
+  <Card imageSrc="images/content/CXSuite_agente.png">
+    <h1>
+      <span class="text-gradient-cx-right">CX Suite es omnicanal</span> lo que permitirá
+      a tus agentes atender todos los canales de comunicación con tus clientes en
+      un solo lugar.
+    </h1>
+    <p class="subtitle">
+      Gestiona conversaciones en Messenger, WhatsApp, Telegram, Twitter,
+      llamadas teléfonicas, formularios, SMS y más, todo desde un mismo sitio.
+    </p>
+    <ButtonCX title="Agenda una demo" href="formulario.html" />
+  </Card>
+
+  <!-- CX Suite te da las mejores herramientas -->
+  <Card class="card" imageSrc="images/content/CXSuitesoluciones.svg" imageLeft>
+    <h1>
+      <span class="text-gradient-cx-right"
+        >CX Suite te da las mejores herramientas</span
+      > para que tu equipo gestione el servicio al cliente de forma eficiente y efectiva.
+    </h1>
+    <p class="subtitle">
+      Ofrece una experiencia sin interrupciones en todos tus canales de contacto
+      sin importar horario y lugar.
+    </p>
+    <a class="hero-more-info">
+      Más información {">"}
+    </a>
+  </Card>
+
+  <!-- CX Suite ofrece un amplio abanico de soluciones como: -->
+  <Card imageSrc="images/content/Abanico.svg">
+    <h1>
+      <span class="text-gradient-cx-right"
+        >CX Suite ofrece un amplio abanico de soluciones como:</span
+      > Atención a clientes, soporte técnico, recursos humanos, c-commerce y más.
+    </h1>
+    <p class="subtitle">
+      Nuestra plataforma facilita al usuario el proceso de compra, desde la
+      atracción, conversión, recuperación, cierre y soporte en la entrega.
+    </p>
+    <a class="hero-more-info">
+      Más información {">"}
+    </a>
+  </Card>
+
+  <!-- CX Suite te permite supervisar a tu equipo y obtener reportes -->
+  <Card imageSrc="images/content/Obtener.svg" imageLeft>
+    <h1>
+      <span class="text-gradient-cx-right"
+        >CX Suite te permite supervisar a tu equipo y obtener reportes</span
+      > con la información necesaria para que tomes las mejores decisiones.
+    </h1>
+    <p class="subtitle">
+      Mide el rendimiento de tu equipo en tiempo real y reduce costos
+      operativos.
+    </p>
+    <ButtonCX title="Agenda una demo" href="formulario.html" />
+  </Card>
+
+  <BrandsContainer />
+</div>
+
+<style>
+  .hero {
+    padding: 40px 10px;
+  }
+
+  .hero-col-1,
+  .hero-col-2 {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    max-width: min(90vw, 500px);
+    margin: auto;
+    position: relative;
+    padding: 10px;
+  }
+
+  .hero-background {
+    background-image: url("../images/hero/heroBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .hero-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 30px;
+    font-weight: normal;
+    color: #000;
+  }
+
+  .subtitle {
+    text-align: justify;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .hero-more-info {
+    color: #ef751b;
+    text-decoration: underline;
+    font-size: 22px;
+    font-weight: bold;
+  }
+</style>
