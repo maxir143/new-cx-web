@@ -17,11 +17,9 @@
     navWrapper.classList.remove("show");
   }
 
-  document
-    .getElementById("link-item-select")
-    .addEventListener("change", (e) => {
-      window.location = e.target?.value;
-    });
+  document.getElementById("select-list").addEventListener("change", (e) => {
+    window.location = e.target?.value || "/";
+  });
 
   function handleNavLinksSelection() {
     const navLinks = document.querySelectorAll("nav a");
@@ -122,7 +120,8 @@
   <nav id="nav" class="main-nav">
     <!---Desplegable características-->
     <button class="link-item" id="link-item-select">
-      <select class="link-item-select">
+      <select class="link-item-select" id="select-list">
+        <option selected disabled value="none">Más</option>
         <option value="">Características</option>
         <option value="funcionalidades">Funcionalidades</option>
         <option value="soluciones">Soluciones</option>
