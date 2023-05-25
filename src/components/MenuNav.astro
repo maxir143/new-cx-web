@@ -22,6 +22,42 @@
     .addEventListener("change", (e) => {
       window.location = e.target?.value;
     });
+
+  function handleNavLinksSelection() {
+    const navLinks = document.querySelectorAll("nav a");
+    const currentPath = window.location.pathname.slice("1");
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+      const hrefArray = link?.href?.split("/");
+      const thisPath = hrefArray?.[hrefArray.length - 1];
+
+      if ((currentPath !== "") & (currentPath === thisPath)) {
+        link.classList.add("active");
+      }
+    });
+  }
+
+  function handleSelectSelection() {
+    const navSelect = document.getElementById("link-item-select");
+    const navSelectOptions = document.querySelectorAll(
+      "nav button select option"
+    );
+    const currentPath = window.location.pathname.slice("1");
+    navSelectOptions.forEach((option) => {
+      if (option.value === currentPath) {
+        console.log(currentPath);
+        option.setAttribute("selected", true);
+        option.setAttribute("hidden", true);
+        navSelect.classList.add("active");
+      }
+    });
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    handleNavLinksSelection();
+    handleSelectSelection();
+  });
 </script>
 
 <header class="main-header">
@@ -85,11 +121,10 @@
   <!---Barra navegación-->
   <nav id="nav" class="main-nav">
     <!---Desplegable características-->
-    <!-- TODO FIX selected page-->
-    <button class="link-item">
-      <select id="link-item-select" class="link-item-select">
-        <option value="inicio">Características</option>
-        <option value="funcionalidades"> Funcionalidades</option>
+    <button class="link-item" id="link-item-select">
+      <select class="link-item-select">
+        <option value="">Características</option>
+        <option value="funcionalidades">Funcionalidades</option>
         <option value="soluciones">Soluciones</option>
       </select>
     </button>
@@ -179,11 +214,6 @@
 
   .link-item.active {
     border-bottom: 5px solid #f9751c;
-  }
-
-  select option:first-child {
-    text-indent: -9999px;
-    display: none;
   }
 
   option {
